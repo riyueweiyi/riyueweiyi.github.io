@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>领取红包</title>
+    <link rel="stylesheet" href="./css/csshake.min.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <script src="https://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="surprises">
+            <div class="fly">10</div>
+            <div class="fly">5毛</div>
+            <div class="fly">100</div>
+            <div class="fly">66</div>
+            <div class="fly">99</div>
+            <div class="fly">
+                <i class="hearts"></i>
+            </div>
+            <div class="fly">
+                $
+            </div>
+            <div class="fly">
+                <i class="hearts"></i>
+            </div>
+        </div>
+        <!-- 红包 -->
+        <div class="red">
+            <!-- shake-chunk -->
+            <span style="background-image: url(./img/red-w.png);"></span>
+            <button class="redbutton" type="领取红包">拆红包</button>
+            <div class="red-jg">
+                <h1>恭喜您！</h1>
+                <h5>获得<span id="prize"></span>现金红包</h5>
+            </div>
+        </div>
+        <div class="t-btn">
+            <button id="share-btn">分享领取</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+<script type="text/javascript">
+    //调用jssdk配置，由后端提供
+    wx.config({
+        debug: false,
+        appId: '',
+        timestamp: '',
+        nonceStr: '',
+        signature: '',
+        jsApiList: [
+            // 所有要调用的 API 都要加到这个列表中  
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'onMenuShareQZone'
+        ]
+    });
+
+</script>
+<script src="./js/share.js"></script>
+
+</html>
