@@ -14,6 +14,7 @@
                         $('.red').removeClass('shake-chunk');
                         $('.redbutton').css("display", "none");
                         $('.red > span').css("background-image", "url(./img/red-y.png)");
+                        $(".surprises").hide();
                         $("#prize").text(res.price);
 
                         $('.red-jg').css("display", "block");

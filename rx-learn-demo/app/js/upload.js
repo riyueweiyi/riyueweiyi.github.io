@@ -105,7 +105,7 @@ $(function () {
             $.weui.alert({ text: '请等待图片上传完成' });
             return;
         }
-        location.href="../share.html";
+
         $.ajax({
             url: "/upload",
             type: "POST",

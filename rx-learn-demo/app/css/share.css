@@ -90,14 +90,14 @@ a:active {
 
 .surprises .fly {
     position: absolute;
-    top: 45px;
+    top: 25%;
     left: 0;
     color: #f37476;
     z-index: 0;
     opacity: 0;
     font-size: 10px;
-    -webkit-animation-duration: 1.65s;
-    animation-duration: 1.65s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
@@ -159,7 +159,31 @@ a:active {
     animation-delay: 0.75s;
     left: 118px;
 }
-
+.surprises .fly:nth-child(9) {
+    -webkit-animation-delay: 1.75s;
+    animation-delay: 1.75s;
+    left: 220px;
+}
+.surprises .fly:nth-child(11) {
+    -webkit-animation-delay: 2.75s;
+    animation-delay: 2.75s;
+    left: 258px;
+}
+.surprises .fly:nth-child(10) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    left: 235px;
+}
+.surprises .fly:nth-child(12) {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+    left: 88px;
+}
+.surprises .fly:nth-child(13) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    left: 75px;
+}
 .hearts {
     position: relative;
 }
