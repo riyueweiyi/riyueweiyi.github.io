@@ -2,6 +2,10 @@
             background: #e22;
             font-family: "Microsoft YaHei" ! important;
         }
+        .container {
+            position: relative;
+            padding-bottom: 1rem
+        }
         .uploader-wrapper {
             text-align: center;
             width: 100%;
@@ -116,14 +120,16 @@
         }
         .footer {
             text-align: center;
-            position: fixed;
-            bottom: 4rem;
+            position: absolute;
+            bottom: 1rem;
             width: 100%
         }
 
         .form-control {
             text-align: center;
-            margin: 2rem 0;
+        }
+        .form-control:last-child {
+            margin-bottom: 2rem;
         }
         .form-control input {
             padding: .3rem 0;
