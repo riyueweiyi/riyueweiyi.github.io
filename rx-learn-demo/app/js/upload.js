@@ -106,17 +106,28 @@ $(function () {
             return;
         }
 
+        if (!$("#username").val() || !$("#phone").val()) {
+            $.weui.alert({ text: '请填写姓名或电话' });
+            return;
+        }
+
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if (!myreg.test($("#phone").val())) {
+            $.weui.alert({ text: '请输入有效的手机号码！' });
+            return false;
+        }
+
         $.ajax({
             url: "/upload",
             type: "POST",
             data: {
                 url: $(".weui_uploader_files li").data("url")
             },
-            success: function(res){
+            success: function (res) {
                 if (res.success) {
 
                 } else {
-                     $.weui.alert({ text: '上传失败' });
+                    $.weui.alert({ text: '上传失败' });
                 }
             }
         })

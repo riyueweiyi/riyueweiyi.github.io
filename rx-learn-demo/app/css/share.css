@@ -4,7 +4,19 @@
 }
 
 body {
-    background: #f4f4f4
+        background: url(../img/red-w.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-family: "Microsoft YaHei" ! important;
+}
+body.isOpen {
+    background: url(../img/red-y.png) no-repeat;
+    background-size: cover;
 }
 
 
@@ -28,7 +40,7 @@ a:active {
 
 .wrapper {
     position: absolute;
-    top: 15%;
+    top: 18%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -397,7 +409,7 @@ button {
 
 .red>button {
     position: absolute;
-    top: 38%;
+    top: 8%;
     left: 30%;
     font-size: 14px;
     width: 40%;
@@ -410,7 +422,7 @@ button {
 .red-jg {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 10%;
     text-align: center;
     width: 100%;
 }
@@ -438,7 +450,23 @@ button {
     width: 100%;
     background: #df0000;
     border-radius: 5px;
-    color: #fff;
+    color: #e22;
     line-height: 40px;
     font-size: 14px;
+}
+h2, p {
+            text-align: center;
+            color: #fff;
+            margin: 5px 0
+        }
+.info {
+    margin-top: 2rem
+}
+.label {
+    background: #ff8400;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 0 .5rem;
 }
