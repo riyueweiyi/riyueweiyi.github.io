@@ -31,11 +31,10 @@ $(function () {
             var reader = new FileReader();
 
             // 如果类型不在允许的类型范围内  
-            alert(file.type)
-            if (allowTypes.indexOf(file.type) === -1) {
-                $.weui.alert({ text: '该类型不允许上传' });
-                continue;
-            }
+           // if (allowTypes.indexOf(file.type) === -1) {
+           //     $.weui.alert({ text: '该类型不允许上传' });
+           //     continue;
+           // }
 
             if (file.size > maxSize) {
                 $.weui.alert({ text: '图片太大，不允许上传' });
