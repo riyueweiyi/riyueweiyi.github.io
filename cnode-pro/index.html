@@ -7,14 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons">
-  <link href="styles.be28a109aedaf728d2bd.bundle.css" rel="stylesheet" />
-</head>
+<link href="styles.be28a109aedaf728d2bd.bundle.css" rel="stylesheet"/></head>
 <body>
-  <app-root>Loading</app-root>
+  <app-root>
+    <!--我们可以在这些标签之间放置任何东西，包括样式定义，一旦Angular完成加载和引导根组件，就可以完全清除它们-->
+    <style>
+      app-root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        color: #2196f3;
+        text-transform: uppercase;
+        font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        Helvetica,
+        sans-serif;
+        font-size: 2.5em;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes dots {
+        50% {
+          transform: translateY(-.4rem);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .d {
+        animation: dots 1.5s ease-out infinite;
+      }
+
+      .d-2 {
+        animation-delay: .5s;
+      }
+
+      .d-3 {
+        animation-delay: 1s;
+      }
+    </style>
+
+    Loading<span class="d">.</span><span class="d d-2">.</span><span class="d d-3">.</span>
+  </app-root>
   <dialog-outlet></dialog-outlet>
-  <script type="text/javascript" src="inline.2a415da8f654afba5bd2.bundle.js"></script>
-  <script type="text/javascript" src="polyfills.7620857ab31c68da31ef.bundle.js"></script>
-  <script type="text/javascript" src="vendor.bcdd9c233f90b11f5f71.bundle.js"></script>
-  <script type="text/javascript" src="main.af2adc505e8077b45fca.bundle.js"></script>
-</body>
+<script type="text/javascript" src="inline.2a415da8f654afba5bd2.bundle.js"></script><script type="text/javascript" src="polyfills.7620857ab31c68da31ef.bundle.js"></script><script type="text/javascript" src="vendor.bcdd9c233f90b11f5f71.bundle.js"></script><script type="text/javascript" src="main.af2adc505e8077b45fca.bundle.js"></script></body>
 </html>
