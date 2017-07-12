@@ -1,0 +1,205 @@
+.container {
+    background: #f5f5f5
+}
+.ixs-product {
+    margin-top: 72px;
+    background: url(../images/product/banner.jpg) no-repeat;
+    background-size: 100% 100%;
+    min-height: 436px;
+    position: relative;
+}
+
+.ixs-product .ixs-content > div {
+    height: 174px;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -107px;
+    margin-left: -25%;
+    color: #fff;
+    text-align: center
+}
+.ixs-product .ixs-content > div h1 {
+    margin: 0px 0 30px 0;
+    position: relative
+}
+
+.ixs-product .ixs-content > div h1::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: -15px;
+}
+.ixs-product .ixs-content > div h1 + p {
+    font-size: 16px;
+} 
+
+/**/
+.ixs-idea .ixs-list {
+    width: 1200px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+}
+
+.ixs-idea .ixs-list .left,
+.ixs-idea .ixs-list .right {
+    width: 270px;
+    position: absolute;
+    top: 20px;
+}
+.ixs-idea .ixs-list .left {
+   left: 20px;
+}
+
+.ixs-idea .ixs-list .right {
+    right: 20px;
+}
+.ixs-idea .ixs-list .center {
+    margin: 0 292px;
+}
+
+.ixs-idea .ixs-list a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.ixs-idea .ixs-list a  h4{
+    margin: 12px 0;
+    position: relative;
+    display: inline-block
+}
+
+.ixs-idea .ixs-list .list-disc h4::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #007aff;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+/**/
+.ixs-product-list {
+    width: 1000px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.ixs-product-list h2 {
+    margin-bottom: 30px;
+}
+
+.ixs-product-list h2 .line {
+    background: #019dfe
+}
+
+.ixs-product-list .ixs-content {
+    margin-top: 30px;
+}
+.ixs-product-list .ixs-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.ixs-product-list .ixs-content .ixs-tabs {
+    width: 256px;
+    float: left;
+}
+.ixs-product-list .ixs-content .ixs-tabs li {
+    min-height: 193px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.ixs-product-list .ixs-content .ixs-tabs li.active {
+    border-left: 4px solid #019dfe
+}
+.ixs-product-list .ixs-content .ixs-tabs li.active .ixs-font{
+    color: #019dfe
+}
+
+.ixs-product-list .ixs-content .ixs-list-view li {
+    min-height: 274px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    overflow: hidden;
+    position: relative
+}
+
+.ixs-product-list .ixs-content .ixs-list-view {
+    margin-left: 276px;
+}
+.ixs-product-list .ixs-content .ixs-list-view li {
+    margin-bottom: 15px;
+}
+
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-header {
+    float: left;
+    border-right: 1px solid #e5e5e5;
+}
+
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body {
+    box-sizing: border-box;
+    padding: 30px;
+    margin-left: 281px;
+}
+
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body h4 {
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+}
+
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body h4::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #007aff;
+    position: absolute;
+    left: 311px;
+    top: 45px;
+}
+
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body p {
+    font-size: 15px;
+    color: #666
+}
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body .ixs-btn {
+    position: absolute;
+    left: 311px;
+    bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #3a92f4 , #35c4ff);
+    background: -o-linear-gradient(right, #3a92f4, #35c4ff);
+    background: -moz-linear-gradient(right, #3a92f4, #35c4ff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3a92f4 , #35c4ff); 
+    FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#35c4ff,endColorStr=#3a92f4); /*IE 6 7 8*/
+}
+.ixs-product-list .ixs-content .ixs-list-view .ixs-list-view-body .ixs-btn:hover {
+    background: -webkit-linear-gradient(left, #35c4ff, #3a92f4);
+    background: -o-linear-gradient(right, #35c4ff, #3a92f4);
+    background: -moz-linear-gradient(right, #35c4ff, #3a92f4); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #35c4ff, #3a92f4); 
+    FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#3a92f4,endColorStr=#35c4ff); /*IE 6 7 8*/
+}
+.ixs-font {
+     font-size: 120px;
+}
